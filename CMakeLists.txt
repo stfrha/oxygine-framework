@@ -80,10 +80,10 @@ elseif (${CMAKE_SYSTEM_NAME} MATCHES "Linux")
 elseif(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
 elseif(MSVC)
 
-	set(OX_HAVE_LIBJPEG 1)
+	set(OX_HAVE_LIBJPEG 0)
 	set(OX_HAVE_LIBPNG 1)	
-	set(OX_HAVE_LIBCURL 1)
-	set(OX_HAVE_HTTP 1)
+	set(OX_HAVE_LIBCURL 0)
+	set(OX_HAVE_HTTP 0)
 
 	set(libprefix lib)
 
@@ -197,7 +197,7 @@ if (OX_HAVE_LIBPNG)
 
 		if (MSVC)		
 			if(NOT (MSVC_VERSION LESS 1900))
-				set(LIBPNG ${LIBPNG}-2015)
+		 		#set(LIBPNG ${LIBPNG}-2015)
 			endif()
 		endif()		
 	
