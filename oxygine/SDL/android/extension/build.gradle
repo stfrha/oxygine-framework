@@ -12,7 +12,7 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-        namespace 'oxygine_ext'
+        namespace 'oxygine.ext'
 
         compileSdkVersion rootProject.android.compileSdkVersion
         buildToolsVersion rootProject.android.buildToolsVersion
